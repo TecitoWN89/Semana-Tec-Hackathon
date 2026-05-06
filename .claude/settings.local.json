@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(PORT=3099 npm run dev)",
+      "Bash(curl -s http://localhost:3099/health)",
+      "Bash(curl -s -X POST http://localhost:3099/api/milesight/uplink -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(curl -s \"http://localhost:3099/api/readings?limit=5\")",
+      "Bash(curl -s \"http://localhost:3099/api/readings/24e124fffef00001/latest\")",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"tsx watch src/index.ts\")",
+      "Bash(curl -s -X POST http://localhost:3099/api/milesight/uplink -H 'Content-Type: application/json' -H 'Authorization: Bearer c17ff58c3d8af9c80a6f4987a693ebebd8399b26d5b6e526d1c0d3fa6ea803b8' -d '{ \"distance\": 300 }')",
+      "Bash(curl -s -X POST http://localhost:3099/api/milesight/uplink -H 'Content-Type: application/json' -H 'Authorization: Bearer c17ff58c3d8af9c80a6f4987a693ebebd8399b26d5b6e526d1c0d3fa6ea803b8' -d '{ \"distance\": 546 }')",
+      "Bash(curl -s \"http://localhost:3099/api/readings?limit=10\")"
+    ]
+  }
+}
